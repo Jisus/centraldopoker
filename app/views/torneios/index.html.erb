@@ -1,0 +1,39 @@
+<h1>Listing torneios</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Limite</th>
+    <th>Buyin</th>
+    <th>Tipopagamento</th>
+    <th>Velocidade</th>
+    <th>Moeda</th>
+    <th>Formato</th>
+    <th>Jogadorespormesa</th>
+    <th>Linkexterno</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @torneios.each do |torneio| %>
+  <tr>
+    <td><%= torneio.nome %></td>
+    <td><%= torneio.limite %></td>
+    <td><%= torneio.buyIn %></td>
+    <td><%= torneio.tipoPagamento %></td>
+    <td><%= torneio.velocidade %></td>
+    <td><%= torneio.moeda %></td>
+    <td><%= torneio.formato %></td>
+    <td><%= torneio.jogadoresPorMesa %></td>
+    <td><%= torneio.linkExterno %></td>
+    <td><%= link_to 'Show', torneio %></td>
+    <td><%= link_to 'Edit', edit_torneio_path(torneio) %></td>
+    <td><%= link_to 'Destroy', torneio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Torneio', new_torneio_path %>

@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @torneio.nome %>
+</p>
+
+<p>
+  <b>Limite:</b>
+  <%= @torneio.limite %>
+</p>
+
+<p>
+  <b>Buyin:</b>
+  <%= @torneio.buyIn %>
+</p>
+
+<p>
+  <b>Tipopagamento:</b>
+  <%= @torneio.tipoPagamento %>
+</p>
+
+<p>
+  <b>Velocidade:</b>
+  <%= @torneio.velocidade %>
+</p>
+
+<p>
+  <b>Moeda:</b>
+  <%= @torneio.moeda %>
+</p>
+
+<p>
+  <b>Formato:</b>
+  <%= @torneio.formato %>
+</p>
+
+<p>
+  <b>Jogadorespormesa:</b>
+  <%= @torneio.jogadoresPorMesa %>
+</p>
+
+<p>
+  <b>Linkexterno:</b>
+  <%= @torneio.linkExterno %>
+</p>
+
+
+<%= link_to 'Edit', edit_torneio_path(@torneio) %> |
+<%= link_to 'Back', torneios_path %>

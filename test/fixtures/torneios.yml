@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  limite: MyString
+  buyIn: MyString
+  tipoPagamento: MyString
+  velocidade: MyString
+  moeda: MyString
+  formato: MyString
+  jogadoresPorMesa: MyString
+  linkExterno: MyString
+
+two:
+  nome: MyString
+  limite: MyString
+  buyIn: MyString
+  tipoPagamento: MyString
+  velocidade: MyString
+  moeda: MyString
+  formato: MyString
+  jogadoresPorMesa: MyString
+  linkExterno: MyString

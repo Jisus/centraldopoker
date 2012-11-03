@@ -1,0 +1,53 @@
+<%= form_for(@torneio) do |f| %>
+  <% if @torneio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@torneio.errors.count, "error") %> prohibited this torneio from being saved:</h2>
+
+      <ul>
+      <% @torneio.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :limite %><br />
+    <%= f.text_field :limite %>
+  </div>
+  <div class="field">
+    <%= f.label :buyIn %><br />
+    <%= f.text_field :buyIn %>
+  </div>
+  <div class="field">
+    <%= f.label :tipoPagamento %><br />
+    <%= f.text_field :tipoPagamento %>
+  </div>
+  <div class="field">
+    <%= f.label :velocidade %><br />
+    <%= f.text_field :velocidade %>
+  </div>
+  <div class="field">
+    <%= f.label :moeda %><br />
+    <%= f.text_field :moeda %>
+  </div>
+  <div class="field">
+    <%= f.label :formato %><br />
+    <%= f.text_field :formato %>
+  </div>
+  <div class="field">
+    <%= f.label :jogadoresPorMesa %><br />
+    <%= f.text_field :jogadoresPorMesa %>
+  </div>
+  <div class="field">
+    <%= f.label :linkExterno %><br />
+    <%= f.text_field :linkExterno %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

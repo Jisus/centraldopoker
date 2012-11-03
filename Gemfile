@@ -7,7 +7,7 @@ gem 'rails', '3.2.7'
 
 gem 'sqlite3'
 gem 'curb'
-
+gem "xml-simple", "~> 1.1.2"
 
 # Gems used only for assets and not required
 # in production environments by default.
