@@ -10,9 +10,13 @@ class WebgetController < ApplicationController
     @ref  = XmlSimple.xml_in(@xml_data)
     
     @ref['tournament'].each do |torneio| 
-      save = Torneio.new
-      save.nome = torneio['name']
-      save.save()
+      begin
+        @save = Torneio.new
+        @save.nome = torneio['name']
+        @save.save(:validate => false)
+      rescue
+        
+      end
     end
 
     respond_to do |format|
